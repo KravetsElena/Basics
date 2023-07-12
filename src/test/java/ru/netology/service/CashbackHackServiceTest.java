@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.*;
 
-public  class CashbackHackServiceTest {
+public class CashbackHackServiceTest {
 
     @Test
     public void shouldRemainAnderAmountLimit() {
@@ -18,7 +18,7 @@ public  class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldRemainAmountLimit() {
+    public void shouldRemainAmountLimit() {
         CashbackHackService hackService = new CashbackHackService();
         int amount = 1000;
 
@@ -29,7 +29,7 @@ public  class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldRemainOverAmountLimit() {
+    public void shouldRemainOverAmountLimit() {
         CashbackHackService hackService = new CashbackHackService();
         int amount = 1001;
 
